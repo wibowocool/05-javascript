@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+  </head>
+  <body>
+    <script>
+      let arrayKosong = [];
+      let arrayNama = ["Budi", "Siti", "Joko"];
+
+      const names = [];
+      names.push("Eko");
+      names.push("Kurniawan", "Khannedy");
+      names.push("Budi", "Siti", "Joko");
+
+      console.table(names); // Output: Array with Eko, Kurniawan, Khannedy
+
+      console.info(names[0]); // Output: "Eko"
+      console.info(names[1]); // Output: "Kurniawan"
+      console.info(names[2]); // Output: "Khannedy"
+
+      names[0] = "Programmer";
+      names[1] = "Zaman";
+      names[2] = "Now";
+
+      console.table(names); // Output: Array with updated first element
+
+      delete names[3];
+      console.table(names); // Output: Array with deleted element at index 3
+
+      names.push("Eko lagi");
+      console.table(names); // Output: Array with new element added
+
+      names[3] = "Diubah Lagi";
+      console.table(names); // Output: Array with updated element at index 3
+
+
+    </script>
+  </body>
+</html>

@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>String Template</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Template</title>
+  </head>
+  <body>
+    <script>
+      const name = "Eko Kurniawan Khannedy";
+      const firstName = "Eko";
+      const middleName = "Kurniawan";
+      const lastName = "Khannedy";
+      const template = `name : ${firstName} ${middleName} ${lastName}`;
 
-    const name = "Eko Kurniawan Khannedy";
-    const firstName = "Eko";
-    const middleName = "Kurniawan";
-    const lastName = "Khannedy";
-    const template = `name : ${firstName} ${middleName} ${lastName}`;
-    
-    console.info(template);
+      console.info(template);
 
-  </script>
-</body>
+      const nilai = 90;
+      const template2 = `Name : ${name}, lulus : ${nilai >= 75}`;
+
+      console.info(template2);
+
+      const multiline = `Nama saya eko,
+      sekarang saya kerja,
+      sering juga biking konten Programming,
+      kalo lagi males paling tidur`;
+
+      document.writeln("<pre>");
+        document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
 </html>
